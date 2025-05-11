@@ -17,7 +17,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: ${DISCOVERY_SERVICE_URL:http://localhost:8761/eureka}
+      defaultZone: http://projet-3-discovery-service:8761/eureka
   instance:
     prefer-ip-address: true
 
