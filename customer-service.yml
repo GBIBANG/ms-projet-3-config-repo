@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:customer-db
+
+springdoc:
+  api-docs:
+    path: /customer-api/v3/api-docs
+  swagger-ui:
+    path: /customer-api/swagger-ui.html
+
+customer:
+  params:
+    x: 44
+    y: 11

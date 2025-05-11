@@ -1,0 +1,23 @@
+server:
+  port: 14000
+
+spring:
+  datasource:
+    url: jdbc:postgresql://prod-db:5432/customerdb
+    username: prod_user
+    password: super_secure_pass
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false
+
+customer:
+    params:
+        x: 99
+        y: 77

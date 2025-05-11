@@ -1,0 +1,23 @@
+server:
+  port: 14500
+
+spring:
+  datasource:
+    url: jdbc:postgresql://prod-db:5432/accountdb
+    username: prod_user
+    password: super_secure_pass
+    driverClassName: org.postgresql.Driver
+  jpa:
+    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+springdoc:
+  swagger-ui:
+    enabled: false
+  api-docs:
+    enabled: false
+
+bankAccount:
+  params:
+    a: 33
+    b: 44
