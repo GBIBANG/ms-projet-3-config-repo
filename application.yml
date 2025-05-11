@@ -1,0 +1,27 @@
+
+spring:
+  datasource:
+    username: garcin
+    password: Hello0505
+    driverClassName: org.h2.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://projet-3-discovery-service:8761/eureka
+  instance:
+    prefer-ip-address: true
+
+global:
+  params:
+    p1: 33
+    p2: 22
